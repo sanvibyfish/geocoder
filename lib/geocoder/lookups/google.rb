@@ -31,7 +31,7 @@ module Geocoder::Lookup
       params = {
         (query.reverse_geocode? ? :latlng : :address) => query.sanitized_text,
         :sensor => "false",
-        :language => Geocoder::Configuration.language
+        :language => "zh_CN"
       }
       unless (bounds = query.options[:bounds]).nil?
         params[:bounds] = bounds.map{ |point| "%f,%f" % point }.join('|')

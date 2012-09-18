@@ -5,7 +5,7 @@ Geocoder.configure do |config|
 
   # config.timeout      = 3           # geocoding service timeout (secs)
   # config.lookup       = :google     # name of geocoding service (symbol)
-  # config.language     = :en         # ISO-639 language code
+  # config.language     = :zh         # ISO-639 language code
   # config.use_https    = false       # use HTTPS for lookup requests? (if supported)
   # config.http_proxy   = nil         # HTTP proxy server (user:pass@host:port)
   # config.https_proxy  = nil         # HTTPS proxy server (user:pass@host:port)

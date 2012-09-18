@@ -64,12 +64,12 @@ module Geocoder
       @timeout      = 3           # geocoding service timeout (secs)
       @lookup       = :google     # name of street address geocoding service (symbol)
       @ip_lookup    = :freegeoip  # name of IP address geocoding service (symbol)
-      @language     = :en         # ISO-639 language code
+      @language     = :zh         # ISO-639 language code
       @http_headers = {}          # HTTP headers for lookup
       @use_https    = false       # use HTTPS for lookup requests? (if supported)
       @http_proxy   = nil         # HTTP proxy server (user:pass@host:port)
       @https_proxy  = nil         # HTTPS proxy server (user:pass@host:port)
-      @api_key      = nil         # API key for geocoding service
+      @api_key      = "AIzaSyBITow4GGK45UcS2cs76oFiL4h5__nzJ68"         # API key for geocoding service
       @cache        = nil         # cache object (must respond to #[], #[]=, and #keys)
       @cache_prefix = "geocoder:" # prefix (string) to use for all cache keys
 
@@ -79,7 +79,7 @@ module Geocoder
       @always_raise = []
 
       # calculation options
-      @units     = :mi     # :mi or :km
+      @units     = :km     # :mi or :km
       @distances = :linear # :linear or :spherical
     end
 
